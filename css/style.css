@@ -1,0 +1,499 @@
+.sectiona{
+    display: flex;
+    position: fixed;
+    width: 482px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #604532;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text inside the elements */
+}
+.navbar2{
+    margin-bottom: 115px;
+    gap: 20px;
+    font-family: Copperplate, "Copperplate bold", sans-serif;
+    position: relative;
+    display: flex;
+    width: 482px;
+    height: 100%;
+    flex-direction: column; /* Ensures vertical stacking */
+    align-items: center;    /* Horizontal centering */
+    justify-content: center; /* Vertical centering */
+    text-align: center;      /* Centers inline elements */
+}
+.menu{
+    transition: margin-top 0.3s ease;
+    margin: 0;
+    background-color: #604532;
+    cursor: pointer;
+    font-size: 18px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Important for dropdown positioning */
+}
+.menu .btnmenu{
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    color: #604532;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu .btnmenu:hover {
+    background-color: #eee;
+  }
+.dropdown-content {
+    font-size: 16px;
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 45px; /* Position below the button */
+    left: 12.5%;
+    min-width: 150px;
+    z-index: 1;
+    text-align: center;
+}
+  .dropdown-content a {
+    color: #604532; /* Make links visible */
+    padding: 5px 8px;
+    text-decoration: none;
+    display: block;
+    gap: 50px;
+    top: 45px;
+
+}
+.menua{
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+    background-color: #f9f9f9;
+   
+}
+.dropdown-content a:hover {
+    background-color: #eee;
+}
+.menu.push-down {
+    margin-top: 100px; /* Adjust this based on dropdown height */
+  }
+.logo{
+    position: absolute;
+    left: 180.75px;
+    top: 33.28px;
+    width: 132px;
+    height: 49px;
+
+}
+.mypic{
+    position: absolute;
+    bottom: 0;
+    height: 75%;
+}
+.tm{
+    position: absolute;
+    font-family: Copperplate, "Copperplate bold", sans-serif;
+    font-size: 12px;
+    color: #fff;
+    left: 195px;
+    bottom: 0;
+}
+.navbar1{
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    height: 60px;
+    width: 482px;
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+    justify-content: center;
+    align-items: center;
+}
+.navbar1 ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 100px;
+    cursor: pointer;
+}
+.navbar1 ul li{
+    text-align: center;
+}
+.navbar1 ul li a{
+    text-decoration: none;
+    color: #604532;
+    font-size: 18px;
+    transition: color 0.3s;
+    font-family: Copperplate, "Copperplate bold", sans-serif;
+}
+.navbar1 ul li a:hover {
+    color: #d9cfc1;
+}
+
+
+
+.sectionb{
+    top: 0;
+    position: absolute;
+    display: flex;
+    left: 482px; /* Adjust to the right of sectiona */
+    height: 100%; /* Full height of the page */
+    width: calc(100% - 482px); /* Dynamic width excluding sectiona */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text inside the elements */
+    z-index: 10;
+    overflow-y: auto;
+}
+.imgs{
+    height: 500px;
+    width: 100%;
+}
+.imgsa{
+    height: 775px;
+    width: 75%;
+}
+
+.navbar{
+    top: 16.64px;
+    position: relative;
+    background-color: #604532;
+    height: 60px;
+    width: 750px;
+    display: flex;
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+    justify-content: center;
+    align-items: center;
+}
+.navbar-res{
+    display: none;
+    
+}
+
+.picmy{
+    display: none;
+}
+
+.navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 100px;
+    cursor: pointer;
+}
+.navbar ul li{
+    text-align: center;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+    font-family: Copperplate, "Copperplate bold", sans-serif;
+}
+.navbar ul li a:hover {
+    color: #d9cfc1;
+}
+.name{
+    font-family: Copperplate, "Copperplate bold", sans-serif;
+    color: #604532;
+    font-size: 36px;
+}
+.menuicon {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.content{ 
+    height: 100%; /* Full height */
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Align text content */
+    overflow-y: auto; /* Optional: Add scrolling for small screens */
+}
+.sub{
+    position: relative;
+    background-color: #604532;
+    font-family: Copperplate, "Copperplate bold", sans-serif;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 470px;
+    height: 20px;
+    bottom: 50px;
+}
+.bio{
+    position: relative;
+    font-family: Copperplate, "Copperplate bold", sans-serif;
+    color: #604532;
+    bottom: 50px;
+    line-height: 25px;
+}
+.btncv{
+    text-decoration: none;
+    font-family: Copperplate, "Copperplate bold", sans-serif;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 30px;
+    background-color: #604532;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    bottom: 35px;
+}
+
+.cv a:hover {
+    color: #d9cfc1;
+}
+.social{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: space-between;
+    gap: 30px;
+}
+.contactform {
+    width: 470px;
+    margin: 0 auto;
+    font-family: Copperplate, "Copperplate bold", sans-serif;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #604532;
+}
+.contactform label {
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .contactform input,
+    .contactform textarea {
+      font-family: Copperplate, "Copperplate bold", sans-serif;
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #d9cfc1;
+      border-radius: 4px;
+      font-size: 14px;
+}
+    .contactform textarea {
+        resize: none;
+        height: 100px;
+}
+
+button:hover {
+    background: #d9cfc1;
+}
+
+@media (max-width: 1200px), (max-width: 768px), (max-width: 600px),  (max-width: 480px), (max-width: 375px) {
+    .sectiona{
+        display: none;
+    }
+
+    .sectionb{
+    top: 0;
+    position: fixed;
+    display: flex;
+    left: 0; /* Adjust to the right of sectiona */
+    height: 100%; /* Full height of the page */
+    width: 100%; /* Dynamic width excluding sectiona */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text inside the elements */
+    z-index: 10;
+    font-size: 10px;
+    }
+
+    .sectionb.hide-content {
+        display: none; /* Hide sectionb content */
+    }
+    .navbar{
+        top: 0;
+        position: relative;
+        background-color: #604532;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        clip-path: none;
+        justify-content: left;
+        align-items: center;
+    }
+    .navbar-res{
+        display: block;
+        top: 0;
+        position: relative;
+        background-color: #604532;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        clip-path: none;
+        justify-content: left;
+        align-items: center;
+    }
+    .menu1{
+        position: absolute;
+        left: 12.5%;
+        top: 0;
+        width: 95px;
+        height: 35px;
+        z-index: 1000;
+        font-family: Copperplate, "Copperplate bold", sans-serif;
+    }
+    .navbar-res ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        transition: color 0.3s;
+        font-family: Copperplate, "Copperplate bold", sans-serif;
+    }
+    .navbar-res ul{
+        display: none;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        gap: 50px;
+    }
+    .picmy{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        height: 60%;
+    }
+    .navbar ul{
+      display: none;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+      gap: 50px;
+    }
+
+    .menuicon {
+        display: block; 
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 1100;
+    }
+
+    .navlinks {
+        display: none; /* Hide the menu initially */
+        flex-direction: column;
+        background-color: #604532;
+        position: fixed;
+        top: 56px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        padding: 10px 0;
+        z-index: 1000;
+        gap: 20px;
+    }
+
+    .navlinks.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .navlinks li {
+        padding: 10px 0;
+    }
+    .navlinks a {
+        color: white;
+        font-size: 18px;
+
+    }
+    .logonav{
+        position: absolute;
+        left: 41%;
+        top: 10px;
+        width: 95px;
+        height: 35px;
+    }
+    .menu1{
+        transition: margin-top 0.3s ease;
+        margin: 0;
+        cursor: pointer;
+        font-size: 12px;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        position: relative; /* Important for dropdown positioning */
+    }
+    .menu1 .btnmenu{
+        clip-path: none;
+        text-decoration: none;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 75px;
+        height: 30px;
+        color: #fff;
+    }
+    
+    .menu .btnmenu:hover {
+        background-color: #eee;
+    }
+
+    .dropdown-res {
+        display: none !important;
+    }
+
+
+    .menu1:hover .dropdown-res {
+        display: block !important;
+        position: absolute;
+        background-color: #604532;
+        width: 70px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .dropdown-res a {
+        display: block;
+        padding: 8px;
+        text-decoration: none;
+        color: white;
+        clip-path: none;
+        background-color: #604532;
+        font-size: 12px;
+        
+    }
+
+    .dropdown-res a:hover {
+        background: #4a3a28;
+    }
+
+    .contactform{
+        width: 70%;
+    }
+        #pdfViewer{
+        width: 100%;
+    }
+    .social{
+        position: relative;
+        display: inline-flex;
+        bottom: 0;
+    }
+    .btncv{
+        margin-top: 10px;
+    }
+}
